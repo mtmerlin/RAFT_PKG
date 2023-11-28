@@ -1,10 +1,11 @@
 [build-system]
 # Minimum requirements for the build system to execute.
 requires = ["setuptools", "wheel"]  # PEP 508 specifications.
+build-backend = "setuptools.build_meta"
 
 [project]
-name ="derp"
+name ="raft"
 version = "0.0"
 
 [tool.setuptools.packages.find]
-where = ["core", "alt_cuda_corr"]
+where = ["src"]
